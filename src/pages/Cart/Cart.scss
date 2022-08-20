@@ -1,0 +1,147 @@
+@use "../../scss/breackpoint.scss" as *;
+
+.cart-wrapper {
+    padding: 20px;
+    @include mobile {     
+    padding: 10px;
+    }
+    h1 {
+        font-weight: 300;
+  text-align: center;
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    button {
+        padding: 10px;
+  font-weight: 600;
+  cursor: pointer;
+    }
+}
+
+.top-text {
+    @include mobile {     
+    display: none;
+    }
+    span {
+        text-decoration: underline;
+  cursor: pointer;
+  margin: 0px 10px;
+    }
+}
+
+
+.bot {
+    display: flex;
+  justify-content: space-between;
+  @include mobile {     
+    flex-direction: column;
+    }
+}
+
+.bot-info {
+    flex: 3; 
+    
+}
+
+.bot-product {
+    display: flex;
+  justify-content: space-between;
+  @include mobile {     
+    flex-direction: column;
+    }
+   
+    
+}
+
+.bot-product-detail {
+    flex: 2;
+  display: flex;
+  img {
+    width: 200px;
+    height: 25vh;
+  }
+  
+}
+
+.product-detail {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    span {
+        flex-wrap: wrap;
+        max-width: 250px;       
+    }
+   
+}
+
+.product-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.price-detail {
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+
+.product-amount-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  ;
+}
+
+.product-amount {
+    font-size: 24px;
+  margin: 5px;
+
+@include mobile {     
+    margin: 5px 15px;
+    }
+}
+
+.product-price {
+    font-size: 30px;
+  font-weight: 200;
+  @include mobile {     
+    margin-bottom: 20px;
+    }
+}
+
+
+.summary {
+    flex: 1;
+    border: 0.5px solid lightgray;
+    border-radius: 10px;
+    padding: 20px;
+    height: 50vh;
+    h1 {
+        font-weight: 200;
+    }
+    button {
+        width: 100%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+    }
+}
+
+.summary-item {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+

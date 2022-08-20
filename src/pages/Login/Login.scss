@@ -1,0 +1,56 @@
+@use "../../scss/breackpoint.scss" as *;
+
+.login{ 
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("https://images.unsplash.com/photo-1570857502809-08184874388e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c2hvcHxlbnwwfHwwfHw%3D&w=1000&q=80")
+        center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-wrapper{ 
+    width: 25%;
+    padding: 20px;
+    background-color: white;
+    @include mobile {     
+    width: 75%;
+    }
+
+h1 {
+    font-size: 24px;
+  font-weight: 300;
+}    
+form {
+    display: flex;
+  flex-direction: column;
+input {
+    flex: 1;
+    min-width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+  }
+  button {
+    width: 40%;
+  border: none;
+  padding: 15px 20px;
+  background-color: #07c8da;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+  }
+  a {
+    margin: 5px 0px;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer
+  }
+  
+}
+}

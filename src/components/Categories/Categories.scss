@@ -1,0 +1,14 @@
+
+@use "../../scss/breackpoint.scss" as *;
+
+.categories {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  @include mobile {     
+    padding:  0;
+    flex-direction: column;
+    }
+}

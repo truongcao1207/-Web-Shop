@@ -1,0 +1,88 @@
+@use "../../scss/breackpoint.scss" as *;
+
+.container {
+    height: 60px;
+    @include mobile {     
+    height: 50px;
+    }
+}
+
+.wrapper {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include mobile {     
+    padding: 10px 0;
+    }
+}
+
+.left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.language {
+    font-size: 14px;
+    cursor: pointer;
+    @include mobile {     
+    display: none;
+    }
+}
+.search-container {
+border: 0.5px solid lightgray;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    padding: 5px;
+input {
+    border: none;
+    @include mobile {     
+    width: 50px;
+    }
+}
+}
+
+.center {
+    flex: 1;
+    text-align: center;
+    a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+    color: #333;
+}
+
+    h1 {
+        font-weight: bold;
+        @include mobile {     
+        font-size: 24px;
+        text-decoration: none;
+        }
+    }
+}
+
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include mobile {     
+    flex: 2;
+    justify-content: center;
+    }
+    a:hover, a:visited, a:link, a:active
+    {
+        text-decoration: none;
+        color: #333;
+    }
+}
+.menu-item {
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+    @include mobile {     
+    font-size: 12px;
+    margin-left: 10px;
+    }
+}

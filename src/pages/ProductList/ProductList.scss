@@ -1,0 +1,35 @@
+@use "../../scss/breackpoint.scss" as *;
+
+.product-list {
+  h1 {
+    margin: 20px;
+  }
+}
+
+.product-list-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list-filter {
+  margin: 20px;
+  @include mobile {
+    padding: 10px;
+    flex-direction: column;
+  }
+  span {
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    @include mobile {
+      margin-right: 0;
+    }
+  }
+  button {
+    padding: 5px;
+    margin-right: 10px;
+    @include mobile {
+      margin: 5px;
+    }
+  }
+}
